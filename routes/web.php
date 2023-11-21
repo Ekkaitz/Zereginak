@@ -18,7 +18,8 @@ Route::get('/', function () {
     return view('layouts/main');
 });
 
-Route::get('/zeregina', [ZereginakController::class, "funztioa"]);
+Route::get('/zeregina', [ZereginakController::class, "index"]);
+Route::post('/zeregina', [ZereginakController::class, "gorde"]);
 
 
 Route::delete('/zeregina/{id}', function () {
