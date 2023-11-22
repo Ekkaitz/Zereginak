@@ -17,10 +17,11 @@
                     <input type="submit" value="Gehitu">
                 </form>
 
-                <form action="/zeregina/{id}">
+                <form action="/bilatu" class=" px-12">
                  @csrf
-                 <input type="submit" value="Ezabatu">
-             </form>
+                    <input type="submit" value="Bilatu">
+                </form>
+
          </div>
         
         </header>

@@ -22,8 +22,8 @@ Route::get('/zeregina', [ZereginakController::class, "index"]);
 Route::post('/zeregina', [ZereginakController::class, "gorde"]);
 
 
-Route::delete('/zeregina/{id}', function () {
-    //zeregin berriak gehitzeko ruta
-    return view('welcome');
-});
+Route::get('/zeregina/{id}', [ZereginakController::class, "delete"]);
+
+Route::get("/bilatu",[ZereginakController::class,"bilatu"]);
+
 
